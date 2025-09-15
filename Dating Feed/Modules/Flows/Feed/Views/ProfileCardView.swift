@@ -16,7 +16,6 @@ struct ProfileCardView: View {
                     case .success(let image):
                         image
                             .resizable()
-                            .scaledToFit()
                             .clipped()
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                     case .failure:
